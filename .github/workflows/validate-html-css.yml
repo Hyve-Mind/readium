@@ -1,0 +1,27 @@
+name: "Validate HTML and CSS"
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validateHTML:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: HTML5 Validation
+        uses: Cyb3r-Jak3/html5validator-action@v7.1.0
+        with:
+          root: .
+
+  validateCSS:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: CSS Validation
+        uses: Cyb3r-Jak3/html5validator-action@v7.1.0
+        with:
+          root: assets/css
+          css: true
