@@ -146,3 +146,100 @@ nav {
   color: var(--white);
   padding: var(--spacer-2) var(--spacer-3);
 }
+
+@media (max-width: 599px) {
+  .intro-section {
+    background-color: var(--golden-puppy);
+    padding-top: var(--spacer-6);
+    padding-bottom: var(--spacer-12);
+    padding-left: var(--spacer-4);
+    margin-top: var(--spacer-1);
+    margin-right: var(--spacer-8);
+    margin-left: var(--spacer-0);
+    border-top: 1px solid #262626;
+    display: block;
+    justify-content: center;
+    border-bottom: 1px solid #262626;
+    overflow: hidden;
+    position: relative;
+    box-sizing: inherit;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: var(--xx-large);
+    padding-top: var(--spacer-6);
+    line-height: 70px;
+    width: 100%;
+    display: block;
+    margin-bottom: 35px;
+    letter-spacing: var(--spacer-0);
+  }
+
+  p {
+    font-size: var(--spacer-3);
+    line-height: var(--spacer-3);
+    padding-bottom: var(--spacer-8);
+    font-weight: var(--smaller);
+  }
+
+  button {
+    font-weight: 400;
+    font-size: var(--medium);
+    background-color: var(--black);
+    border-radius: 40px;
+    color: var(--white);
+    padding-top: var(--spacer-0);
+    padding-right: var(--spacer-7);
+    padding-bottom: var(--spacer-0);
+    padding-left: var(--spacer-7);
+  }
+}
+
+@media (min-width: 1199px) {
+  .intro-section {
+    background-color: var(--golden-puppy);
+    padding-top: var(--spacer-8);
+    padding-bottom: var(--spacer-12);
+    padding-left: var(--spacer-12);
+    margin-top: var(--spacer-1);
+    margin-right: var(--spacer-8);
+    margin-left: var(--spacer-0);
+    border-top: 1px solid #262626;
+    display: block;
+    justify-content: center;
+    border-bottom: 1px solid #262626;
+    position: fixed;
+    box-sizing: inherit;
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 105px;
+    padding-top: var(--spacer-6);
+    line-height: var(--spacer-8);
+    width: 100%;
+    display: block;
+    margin-left: var(--spacer-5);
+    margin-bottom: 35px;
+    letter-spacing: var(--spacer-0);
+  }
+
+  p {
+    font-size: var(--spacer-3);
+    line-height: var(--spacer-3);
+    padding-bottom: var(--spacer-8);
+    font-weight: var(--smaller);
+    margin-left: var(--spacer-5);
+  }
+
+  button {
+    font-weight: 400;
+    font-size: var(--medium);
+    background-color: var(--black);
+    border-radius: 40px;
+    color: var(--white);
+    padding: var(--spacer-0) var(--spacer-7) var(--spacer-0) var(--spacer-7);
+    margin-left: var(--spacer-5);
+  }
+}
