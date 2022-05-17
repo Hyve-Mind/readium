@@ -1,0 +1,21 @@
+name: Webpage Screenshot
+
+on:
+  pull_request:
+    types: [opened, reopened, synchronize]
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+
+    permissions:
+      pull-requests: write
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Comment Webpage Screenshot
+        uses: saadmk11/comment-webpage-screenshot@v0.5
+        with:
+          upload_to: github_branch
+          capture_changed_html_files: yes
