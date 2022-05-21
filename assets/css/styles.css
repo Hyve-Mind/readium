@@ -22,6 +22,7 @@
   --black: #262626;
   --white: #ffffff;
   --golden-puppy: #ffc017;
+  --grey: #757575;
 
   /* Spacing */
 
@@ -145,4 +146,108 @@ nav {
   border-radius: 40px;
   color: var(--white);
   padding: var(--spacer-2) var(--spacer-3);
+}
+
+/*
+=======================
+Aside
+*/
+
+aside {
+  margin: var(--spacer-4) var(--spacer-0) var(--spacer-2);
+  padding: var(--spacer-2);
+  border-top: 1px solid #e6e6e6;
+  border-bottom: 1px solid #e6e6e6;
+}
+.discover-header {
+  font-family: var(--body-font-family);
+  font-size: calc(var(--small) * 1.2);
+  font-weight: 800;
+  color: #292929;
+}
+.discover-grid {
+  display: grid;
+  grid-template-columns:auto auto auto;
+  font-size: calc(var(--small) * 1.2);
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  margin-top: var(--spacer-2);
+}
+
+.item {
+  border: 1px solid #e6e6e6;
+  color: var(--grey);
+  padding: 6px 10px;
+  margin: var(--spacer-0) var(--spacer-1) var(--spacer-1) var(--spacer-0);
+}
+
+.btm-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin-top: 10px;
+  padding: 5px;
+  width: 500px;
+  flex-wrap: wrap;
+  gap: 10px;
+  display: none;
+}
+
+.link-discovery {
+  font-size: calc(var(--small) * 1.13);
+  font-family: Helvetica, sans-serif;
+  text-decoration: none;
+  color: var(--grey);
+  border: none;
+  margin-bottom: 20px;
+  width: 100px;
+  padding: 10px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+
+@media (min-width: 768px) {
+  .ultimate-grid {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .btm-container {
+    display: flex;
+  }
+}
+
+@media (min-width: 1024px) {
+  aside {
+    margin-left: 60%;
+  }
+  .ultimate-grid {
+    display: grid;
+  }
+  .discover-header {
+    font-size: calc(var(--small) * 1.3);
+  }
+  .discover-grid {
+    font-size: calc(var(--small) * 1.3);
+  }
+  .btm-container {
+    margin-left: 60%;
+  }
+  .link-discovery {
+    font-size: calc(var(--small) * 1.2);
+  }
+
+}
+
+@media (min-width: 1440px) {
+  aside {
+    margin-left: 60%;
+  }
+  .btm-container {
+    margin-left: 850px;
+  }
 }
