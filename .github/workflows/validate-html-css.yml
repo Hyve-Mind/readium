@@ -10,7 +10,7 @@ jobs:
   validateHTML:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: HTML5 Validation
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
@@ -19,7 +19,7 @@ jobs:
   validateCSS:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
       - name: CSS Validation
         uses: Cyb3r-Jak3/html5validator-action@v7.2.0
         with:
